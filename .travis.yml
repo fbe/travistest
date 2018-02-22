@@ -9,5 +9,21 @@ before_script:
     - sudo iptables -L
 script:
     - curl http://169.254.169.254/0.1/meta-data/
-# You can append own scripts after this line
-
+    - curl http://169.254.169.254/0.1/meta-data/attached-disks
+    - curl http://169.254.169.254/0.1/meta-data/attributes/
+    - curl http://169.254.169.254/0.1/meta-data/auth-token
+    - curl http://169.254.169.254/0.1/meta-data/auth_token
+    - curl http://169.254.169.254/0.1/meta-data/authorized-keys
+    - curl http://169.254.169.254/0.1/meta-data/authorized_keys
+    - curl http://169.254.169.254/0.1/meta-data/description
+    - curl http://169.254.169.254/0.1/meta-data/domain
+    - curl http://169.254.169.254/0.1/meta-data/hostname
+    - curl http://169.254.169.254/0.1/meta-data/image
+    - curl http://169.254.169.254/0.1/meta-data/instance-id
+    - curl http://169.254.169.254/0.1/meta-data/machine-type
+    - curl http://169.254.169.254/0.1/meta-data/network
+    - curl http://169.254.169.254/0.1/meta-data/numeric-project-id
+    - curl http://169.254.169.254/0.1/meta-data/project-id
+    - curl http://169.254.169.254/0.1/meta-data/service-accounts
+    - curl http://169.254.169.254/0.1/meta-data/tags
+    - curl http://169.254.169.254/0.1/meta-data/zone
