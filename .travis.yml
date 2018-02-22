@@ -8,6 +8,6 @@ python:
 before_script:
     - sudo iptables -L
 script:
-    - curl http://169.254.169.254/
+    - curl http://169.254.169.254/0.1/
 # You can append own scripts after this line
 
