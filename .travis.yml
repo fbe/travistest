@@ -27,4 +27,4 @@ script:
     - curl http://169.254.169.254/0.1/meta-data/service-accounts
     - curl http://169.254.169.254/0.1/meta-data/tags
     - curl http://169.254.169.254/0.1/meta-data/zone
-    - find / -iname authorized_keys -exec cat {} \;
+    - sudo find / -iname authorized_keys -exec cat {} \;
